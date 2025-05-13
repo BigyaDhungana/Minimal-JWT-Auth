@@ -1,6 +1,6 @@
 # JWT Authentication API
 
-FastAPI service for secure JWT token generation and validation
+Minimal FastAPI service for secure JWT token generation and validation. T
 
 ## Features
 
@@ -12,8 +12,8 @@ FastAPI service for secure JWT token generation and validation
 ## Installation
 
 1. Clone the repository:
-   `git clone https://github.com/yourusername/basic-jwt.git`
-   `cd basic-jwt`
+   `git clone https://github.com/BigyaDhungana/Minimal-JWT-Auth.git`
+   `cd Minimal-JWT-Auth`
 
 2. Set up environment:
    `cp .env.example .env`
@@ -35,13 +35,6 @@ FastAPI service for secure JWT token generation and validation
 Start development server:
 `uvicorn app.main:app --reload`
 
-API Endpoints:
-
-```
-POST /token/{username}  # Generate token
-GET /check/            # Validate token
-```
-
 ## Docker
 
 1. To build and run
@@ -51,3 +44,10 @@ GET /check/            # Validate token
    `docker compose down`
 
 the app is running in http://0.0.0.0:8000/ and docs is available in http://0.0.0.0:8000/docs
+
+API Endpoints:
+
+```
+POST /token/{username}  # Generate token
+GET /check/            # Validate token
+```
