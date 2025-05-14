@@ -25,8 +25,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run tests
-        env: SECRET_KEY=${{ secrets.SECRET_KEY }}
-          TOKEN_EXPIRE_IN_MINUTES=${{ secrets.TOKEN_EXPIRE_IN_MINUTES }}
+        env:
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          TOKEN_EXPIRE_IN_MINUTES: ${{ secrets.TOKEN_EXPIRE_IN_MINUTES }}
         run: pytest app/tests/test.py
 
       - name: Build the Docker image
