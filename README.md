@@ -1,6 +1,6 @@
 # JWT Authentication API
 
-Minimal FastAPI service for secure JWT token generation and validation. T
+Minimal FastAPI service for secure JWT token generation and validation.
 
 ## Features
 
@@ -51,3 +51,5 @@ API Endpoints:
 POST /token/{username}  # Generate token
 GET /check/            # Validate token
 ```
+
+:(
